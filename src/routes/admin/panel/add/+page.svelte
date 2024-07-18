@@ -52,10 +52,10 @@ function toggleMenu(tumb: boolean, card: string) {
     <div class="flex flex-col justify-center w-full items-center mt-4">
 
         {#if cardType === "movie"}
+            <div class="flex w-full flex-col">
                 <Headers title="Add Movie"/>
-                <div class="flex w-full flex-col">
-                    <MovieForm />
-                </div>
+                <MovieForm />
+            </div>
             {:else if cardType === "series"}
                 <div class="">
                     <Headers title="Add Series"/>
